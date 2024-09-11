@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>New Page</h1>
-  <h1>New line added</h1>
-  <p>New paragraph added</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-black relative">
+      <nav class="flex items-center justify-between px-8 py-3">
+        <img class="w-16" src="./images/logo.png" alt="bcl logo" />
+        <ul
+          class="md:flex items-center justify-between md:space-x-6 lg:space-x-14 font-sans tracking-widest text-white hidden"
+        >
+          <li
+            class="hover:text-[#03a4ed] hover:border-b hover:border-[#03a4ed]"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="hover:text-[#03a4ed] hover:border-b hover:border-[#03a4ed]"
+          >
+            <a href="#">About Us</a>
+          </li>
+          <li
+            class="hover:text-[#03a4ed] hover:border-b hover:border-[#03a4ed]"
+          >
+            <a href="#">Trainings</a>
+          </li>
+          <li
+            class="hover:text-[#03a4ed] hover:border-b hover:border-[#03a4ed]"
+          >
+            <a href="#">Services</a>
+          </li>
+          <li
+            class="hover:text-[#03a4ed] hover:border-b hover:border-[#03a4ed]"
+          >
+            <a href="#">Contact Us</a>
+          </li>
+          <li
+            class="hover:text-[#03a4ed] hover:border-b hover:border-[#03a4ed]"
+          >
+            <a href="#">Blogs</a>
+          </li>
+          <li
+            class="hover:text-[#03a4ed] hover:border-b hover:border-[#03a4ed]"
+          >
+            <a href="#">Blogs</a>
+          </li>
+        </ul>
+        <svg
+          id="menu-toggle"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 text-white md:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </nav>
+      <!-- mobile menu -->
+    </header>
+    <div
+      id="mobile-menu"
+      class="bg-black absolute bottom-0-0 left-0 w-full md:hidden"
+    >
+    <ul class="text-white  text-center divide-gray-900 ">
+      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Home</a></li>
+      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">About Us</a></li>
+      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Trainings</a></li>
+      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Services</a></li>
+      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Contact Us</a></li>
+      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Blog</a></li>
+    </ul>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
