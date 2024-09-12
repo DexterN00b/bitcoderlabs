@@ -1,0 +1,33 @@
+#mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  height: 100vh;
+}
+
+
+#mobile-menu.active {
+  transform: translateX(0);
+}
+
+
+
+.bg-hover {
+  background: linear-gradient(to right, #03a4ed 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.5s ease-out;
+}
+
+.bg-hover:hover {
+  background-position: left bottom;
+}
+
+
+/* Backdrop hidden by default */
+.backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+
