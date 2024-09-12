@@ -10,8 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
   </head>
+
   <body>
     <header class="bg-black relative">
       <nav class="flex items-center justify-between px-8 py-3">
@@ -62,7 +64,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-6 text-white md:hidden"
+          class="size-6 text-white md:hidden cursor-pointer"
         >
           <path
             stroke-linecap="round"
@@ -74,17 +76,18 @@
       <!-- mobile menu -->
     </header>
     <div
-      id="mobile-menu"
-      class="bg-black absolute bottom-0-0 left-0 w-full md:hidden"
-    >
-    <ul class="text-white  text-center divide-gray-900 ">
-      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Home</a></li>
-      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">About Us</a></li>
-      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Trainings</a></li>
-      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Services</a></li>
-      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Contact Us</a></li>
-      <li class="py-4 hover:bg-[#03a4ed] transition duration-300"><a href="#">Blog</a></li>
-    </ul>
+    id="mobile-menu"
+    class="bg-black absolute bottom-0 left-0 w-1/2 md:hidden"
+  >
+  <ul class="text-white text-center divide-gray-900">
+    <li class="py-4 bg-hover transition-all duration-500"><a href="#">Home</a></li>
+    <li class="py-4 bg-hover transition-all duration-500"><a href="#">About Us</a></li>
+    <li class="py-4 bg-hover transition-all duration-500"><a href="#">Trainings</a></li>
+    <li class="py-4 bg-hover transition-all duration-500"><a href="#">Services</a></li>
+    <li class="py-4 bg-hover transition-all duration-500"><a href="#">Contact Us</a></li>
+    <li class="py-4 bg-hover transition-all duration-500"><a href="#">Blog</a></li>
+  </ul>
+  
   </div>
 
     <script src="script.js"></script>
