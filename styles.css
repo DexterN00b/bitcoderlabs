@@ -31,3 +31,21 @@
 }
 
 
+/* Default navbar styles */
+nav {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar styles when scrolled */
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* Slightly different background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+
+
+
+
+
+
+
